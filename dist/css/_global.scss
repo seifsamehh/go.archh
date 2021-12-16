@@ -1,0 +1,46 @@
+// start variables
+$body-color: #2b2b2b;
+$main-color: #c5a47e;
+$sec-color: #323232;
+$text-color: #fff;
+$text-bg: #54545487;
+$sm-screen: 576px;
+// end variables
+// start components
+::selection {
+  background-color: $main-color;
+  color: $text-color;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background-color: $body-color;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $main-color;
+  border-radius: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: $body-color;
+  overflow-x: hidden;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img,
+button {
+  user-select: none;
+}
+// end components
